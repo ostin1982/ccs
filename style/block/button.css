@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 .button_blue {
-  padding: 15px 10px;
+  padding: 13px 10px;
   border: 1px solid #FFFFFF;
   background: #3E9CDC;
   color: #FFFFFF;
@@ -21,7 +21,7 @@
   color: #2A2B30;
 }
 .button_white {
-  padding: 15px 10px;
+  padding: 13px 10px;
   border: 1px solid #6F6D7B;
   background: #FFFFFF;
   color: #2A2B30;
@@ -45,6 +45,8 @@
 .button_send {
   width: 370px;
   margin: 0 auto;
+  font-weight: 600;
+  padding: 15px 10px;
 }
 
 @media (max-width: 620px) {

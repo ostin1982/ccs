@@ -1,5 +1,6 @@
 .header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   background: rgba(16, 16, 29, 0.9);
@@ -54,13 +55,16 @@
 }
 
 @media (max-width: 820px) {
+  .header__wrapper {
+    padding: 16px 0;
+  }
   .header__nav {
     display: none;
   }
   .header__nav_active {
     display: block;
     position: absolute;
-    top: 97px;
+    top: 65px;
     left: -34px;
     background-color: rgba(61, 64, 80, 0.85);
     width: 100vw;
@@ -114,24 +118,24 @@
     overflow: visible;
   }
   .header__burger_active::before {
-    transform: rotate(225deg);
+    transform: rotate(45deg);
     top: 10px;
-    transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.2s;
   }
   .header__burger_active::after {
-    transform: rotate(-225deg);
+    transform: rotate(-45deg);
     bottom: 10px;
     transition: ease-in-out 0.6s;
   }
   .header__burger_active .header__burger_middle {
     opacity: 0;
     overflow: hidden;
-    transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.2s;
   }
 }
 @media (max-width: 620px) {
   .header__nav_active {
-    top: 88px;
+    top: 56px;
     left: -11px;
   }
   .header__name {
