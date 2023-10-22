@@ -1,0 +1,60 @@
+.input {
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+.input::-moz-placeholder {
+  color: #272733;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input::placeholder {
+  color: #272733;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input:focus {
+  outline-width: 0;
+}
+.input[type=text] {
+  color: #272733;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input_range {
+  -webkit-appearance: none;
+  padding: 0;
+  width: 100%;
+  height: 6px;
+  outline: none;
+  border-radius: 3px;
+}
+.input_range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 34px;
+  height: 34px;
+  background: #42A9ED;
+  border: 3px solid #286690;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+.input_hidden {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  .input_range::-webkit-slider-thumb {
+    width: 24px;
+    height: 24px;
+  }
+}/*# sourceMappingURL=input.css.map */

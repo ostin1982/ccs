@@ -1,0 +1,63 @@
+@import 'color';
+@import 'fonts';
+
+.button {
+    border-radius: 4px;
+    text-align: center;
+    font-size: $font-13;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 183px;
+    cursor: pointer;
+
+    &_blue {
+        padding: 15px 10px;
+        border: 1px solid $color-WM;
+        background: $color-CM-II;
+        color: $color-WM;
+        text-transform: uppercase;
+
+        &:hover {
+            border: 1px solid $color-BM-II;
+            background: $color-WM;
+            color: $color-DM-II;
+        }
+    }
+
+    &_white {
+        padding: 15px 10px;
+        border: 1px solid $color-BM-II;
+        background: $color-WM;
+        color: $color-DM-II;
+        text-transform: uppercase;
+
+        &:hover {
+            border: 1px solid $color-WM;
+            background: $color-CM-II;
+            color: $color-WM;
+        }
+    }
+
+    &_order {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        border: 2px solid $color-CM-II;
+        text-transform: uppercase;
+    }
+
+    &_send {
+        width: 370px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .button {
+        width: 100%;
+    }
+}

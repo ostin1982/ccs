@@ -1,0 +1,108 @@
+@import 'color';
+@import 'fonts';
+
+.screen {
+    position: relative;
+    top: -97px;
+    left: 0;
+    background: url('../../img/main.webp') no-repeat center center;
+    background-size: cover;
+    padding: 200px 0 204px 0;
+    width: 100%;
+
+    &__wrapper {
+        width: 780px;
+    }
+
+    &__title {
+        color: $color-DM;
+        font-size: $font-48;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-wrap: balance;
+        margin: 0 0 80px 0;
+
+        &_color {
+            color: $color-CM-II;
+        }
+    }
+
+    &__subtitle {
+        color: $color-DM;
+        font-size: $font-20;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin-bottom: 80px;
+        padding-left: 24px;
+    }
+
+    &__checklist {
+        position: relative;
+        color: $color-DM;
+        font-size: $font-20;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 5px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 12px;
+            left: -14px;
+            width: 5px;
+            height: 2px;
+            background: $color-DM;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__info {
+        display: flex;
+        gap: 30px;
+        width: 396px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media (max-width: 820px) {
+    .screen {
+        background: url('../../img/main.webp') no-repeat top left;
+
+        &__wrapper {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: $font-36;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .screen {
+        top: -107px;
+
+        &__title {
+            font-size: $font-20;
+        }
+
+        &__info {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+}

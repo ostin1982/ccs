@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background: #3D4050;
+  color: #FFFFFF;
+}
+
+.body_lock {
+  overflow: hidden;
+}
+
+:root {
+  accent-color: #42A9ED;
+}/*# sourceMappingURL=body.css.map */

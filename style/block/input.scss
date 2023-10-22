@@ -1,0 +1,66 @@
+@import 'color';
+@import 'fonts';
+
+.input {
+    border-radius: 3px;
+    border: 1px solid $color-WM;
+    background: $color-OWM;
+    padding: 10px;
+    width: calc(100% - 20px);
+
+    &::placeholder {
+        color: $color-PM;
+        font-size: $font-18;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &:focus {
+        outline-width: 0;
+    }
+
+    &[type="text"] {
+        color: $color-PM;
+        font-size: $font-18;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &_range {
+        -webkit-appearance: none;
+        padding: 0;
+        width: 100%;
+        height: 6px;
+        outline: none;
+        border-radius: 3px;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 34px;
+            height: 34px;
+            background: $color-CM;
+            border: 3px solid $color-DBM;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 3;
+            position: relative;
+        }
+    }
+
+    &_hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .input {
+        &_range {    
+            &::-webkit-slider-thumb {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

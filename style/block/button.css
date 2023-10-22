@@ -1,0 +1,54 @@
+.button {
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 183px;
+  cursor: pointer;
+}
+.button_blue {
+  padding: 15px 10px;
+  border: 1px solid #FFFFFF;
+  background: #3E9CDC;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.button_blue:hover {
+  border: 1px solid #6F6D7B;
+  background: #FFFFFF;
+  color: #2A2B30;
+}
+.button_white {
+  padding: 15px 10px;
+  border: 1px solid #6F6D7B;
+  background: #FFFFFF;
+  color: #2A2B30;
+  text-transform: uppercase;
+}
+.button_white:hover {
+  border: 1px solid #FFFFFF;
+  background: #3E9CDC;
+  color: #FFFFFF;
+}
+.button_order {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: 2px solid #3E9CDC;
+  text-transform: uppercase;
+}
+.button_send {
+  width: 370px;
+  margin: 0 auto;
+}
+
+@media (max-width: 620px) {
+  .button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=button.css.map */
