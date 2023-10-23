@@ -47,6 +47,9 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+.header__link_active {
+  color: #42A9ED;
+}
 .header__link:hover {
   color: #42A9ED;
 }
