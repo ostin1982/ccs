@@ -150,6 +150,7 @@
   height: 0;
   transition: ease-in-out 0.2s;
   margin-right: 2px;
+  z-index: 5;
 }
 .order__nav::-webkit-scrollbar {
   background: rgba(39, 39, 51, 0.9);
